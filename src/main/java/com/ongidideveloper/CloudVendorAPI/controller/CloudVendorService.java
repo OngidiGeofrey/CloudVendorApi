@@ -18,5 +18,10 @@ public class CloudVendorService {
        this.cloudVendor=cloudVendor;
        return "Cloud Vendor created successfully";
     }
+    @PutMapping("edit/{id}")
+    public String updateCloudVendorDetails(@RequestBody CloudVendor cloudVendor){
+        this.cloudVendor=cloudVendor;
+        return "Cloud Vendor updated successfully";
+    }
 
 }
